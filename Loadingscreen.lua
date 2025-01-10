@@ -8,7 +8,7 @@ LoadingText5 = "Error: Execution Failed, re-trying!"
 
 local ScriptTitle = "LightMonzz: Script Loading"
 
-if LoadingScreen ~= false then
+if LoadingScreen ~= true then
     local Loading = Instance.new("ScreenGui")
     local MainFrame = Instance.new("Frame")
     local Title = Instance.new("TextLabel")
