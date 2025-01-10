@@ -200,4 +200,3 @@ if LoadingScreen ~= true then
             tip.Text = LoadingText5
         end
     end
-    coroutine.wrap(SNUMK_fake_script)()
