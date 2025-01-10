@@ -201,18 +201,3 @@ if LoadingScreen ~= false then
         end
     end
     coroutine.wrap(SNUMK_fake_script)()
-    local function LSNGUH_fake_script()
-        local script = Instance.new("LocalScript", Loading)
-        game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
-        game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, false)
-        game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, false)
-        game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.EmotesMenu, false)
-    end
-    coroutine.wrap(LSNGUH_fake_script)()
-end
-
-game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
-game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, false)
-game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, false)
-game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.EmotesMenu, false)
-end
