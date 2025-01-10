@@ -8,6 +8,7 @@ LoadingText5 = "Error: Execution Failed, re-trying!"
 
 local ScriptTitle = "LightMonzz: Script Loading"
 
+if LoadingScreen ~= true then
     local Loading = Instance.new("ScreenGui")
     local MainFrame = Instance.new("Frame")
     local Title = Instance.new("TextLabel")
@@ -199,3 +200,19 @@ local ScriptTitle = "LightMonzz: Script Loading"
             tip.Text = LoadingText5
         end
     end
+    coroutine.wrap(SNUMK_fake_script)()
+    local function LSNGUH_fake_script()
+        local script = Instance.new("LocalScript", Loading)
+        game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
+        game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, false)
+        game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, false)
+        game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.EmotesMenu, false)
+    end
+    coroutine.wrap(LSNGUH_fake_script)()
+end
+
+game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
+game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, false)
+game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, false)
+game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.EmotesMenu, false)
+end
